@@ -6,7 +6,9 @@
   "description": "Rich Presence for DiscordInjections",
   "peerDependencies": { "elements": "*" },
   "keywords": ["di-plugin"],
-  "dependencies": {},
+  "dependencies": {
+    "discord-rich-presence": "^0.0.7"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/austinhuang0131/di-rpc.git"
