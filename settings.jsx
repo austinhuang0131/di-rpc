@@ -10,8 +10,8 @@ module.exports = class Settings extends React.PureComponent {
           <SettingsOptionDescription>
             Requires a Discord developer application. Your application name will always be the title of your
             rich presence, so choose wisely!<br />
-            Always check your status after operation, and remember that you need to <b>press SAVE</b> (unlike other plugins)!
-            <br />Please report any issues to <b>The Double-Eyed Bus#6889</b>.
+            Always check your status after operation!<br />
+            Please report any issues to <b>The Double-Eyed Bus#6889</b>.
           </SettingsOptionDescription>
           <br />
           <img src="https://canary.discordapp.com/assets/43bef54c8aee2bc0fd1c717d5f8ae28a.png" width="100%" alt="Example!"/>
@@ -88,11 +88,6 @@ module.exports = class Settings extends React.PureComponent {
           lsNode='smallImageKey'
           defaultValue=''
           reset
-        />
-        
-        <SettingsOptionButton
-          text='Save'
-          className='DI-plugins-button'
         />
       </div>
     )
