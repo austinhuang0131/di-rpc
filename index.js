@@ -1,7 +1,5 @@
 const { Plugin } = require('elements'),
-      rpc = require('discord-rich-presence'),
-      fs = require('fs'),
-      settings = JSON.parse(fs.readFileSync("./settings.json", "utf8"));
+      rpc = require('discord-rich-presence');
 
 module.exports = class RPC extends Plugin {
   preload () {}
@@ -9,6 +7,12 @@ module.exports = class RPC extends Plugin {
     this.registerSettingsTab('Rich Presence', require('./settings.jsx'))
   }
   unload () {
-    rpc(settings.id)();
+    rpc(this.settings.id)();
   }
+}
+
+function setRPC() {
+  let a = this.settings;
+  delete a.id;
+  rpc(this.settings.id)(a);
 }
