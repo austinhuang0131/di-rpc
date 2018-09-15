@@ -89,6 +89,12 @@ module.exports = class Settings extends React.PureComponent {
           defaultValue=''
           reset
         />
+                
+        <SettingsOptionButton
+          text='Apply'
+          className='DI-plugins-button'
+          onClick={this.props.plugin.setRPC}
+        />
       </div>
     )
   }
