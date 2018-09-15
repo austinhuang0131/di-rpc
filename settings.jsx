@@ -20,7 +20,7 @@ module.exports = class Settings extends React.PureComponent {
             className='DI-plugins-button-add'
           />
           <br />
-          <img src="https://discordapp.com/assets/43bef54c8aee2bc0fd1c717d5f8ae28a.png" alt="Example!"/>
+          <img src="https://canary.discordapp.com/assets/43bef54c8aee2bc0fd1c717d5f8ae28a.png" alt="Example!"/>
         </div>
         
       </div>
