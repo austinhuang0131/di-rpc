@@ -1,4 +1,5 @@
-const React = require('react')
+const React = require('react'),
+      { SettingsOptionDescription, SettingsOptionButton} = require('elements');
 
 module.exports = class Settings extends React.PureComponent {
 
