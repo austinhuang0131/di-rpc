@@ -12,6 +12,7 @@ module.exports = class RPC extends Plugin {
 }
 
 function setRPC() {
+  console.log("apply fired");
   let a = this.settings;
   delete a.id;
   rpc(this.settings.id)(a);
