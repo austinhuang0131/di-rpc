@@ -10,9 +10,10 @@ module.exports = class RPC extends Plugin {
     drpc(this.settings.id)();
   }
   settingsChanged () {
-    console.log("RPC changed");
+    console.log(this.settings);
     let a = this.settings;
     delete a.id;
+    a.instance = true;
     drpc(this.settings.id)(a);
   }
 }
