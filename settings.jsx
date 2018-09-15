@@ -1,9 +1,7 @@
 const React = require('react')
 
 module.exports = class Settings extends React.PureComponent {
-  loadRPC() {
-    
-  }
+
   render () {
     return (
       <div>
@@ -23,15 +21,6 @@ module.exports = class Settings extends React.PureComponent {
           />
           <br />
           <img src="https://discordapp.com/assets/43bef54c8aee2bc0fd1c717d5f8ae28a.png" alt="Example!"/>
-          <br />
-          <SettingsOptionTextbox
-            title='Application ID'
-            description="Your developer application ID."
-            plugin={this.props.plugin}
-            lsNode='a'
-            defaultValue=''
-            reset
-          />
         </div>
         
       </div>
