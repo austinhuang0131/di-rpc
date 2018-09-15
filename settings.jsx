@@ -11,8 +11,7 @@ module.exports = class Settings extends React.PureComponent {
             Requires a Discord developer application. Your application name will always be the title of your
             rich presence, so choose wisely!
             Always check your status after operation!<br />
-            Please report any issues <a href="https://github.com/austinhuang0131/di-rpc">on GitHub</a> 
-            or <a href="mailto:im@austinhuang.me">by email</a>.
+            Please report any issues to <b>The Double-Eyed Bus#6889</b>.
           </SettingsOptionDescription>
 
           <SettingsOptionButton
@@ -20,7 +19,7 @@ module.exports = class Settings extends React.PureComponent {
             className='DI-plugins-button'
           />
           <br />
-          <img src="https://canary.discordapp.com/assets/43bef54c8aee2bc0fd1c717d5f8ae28a.png" width="300" alt="Example!"/>
+          <img src="https://canary.discordapp.com/assets/43bef54c8aee2bc0fd1c717d5f8ae28a.png" width="100%" alt="Example!"/>
         </div>
         
       </div>
