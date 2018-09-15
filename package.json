@@ -1,0 +1,18 @@
+{
+  "name": "di-rpc",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Austin Huang <im@austinhuang.me> (https://austinhuang.me)",
+  "description": "Rich Presence for DiscordInjections",
+  "peerDependencies": { "elements": "*" },
+  "keywords": ["di-plugin"],
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/austinhuang0131/di-rpc.git"
+  },
+  "bugs": {
+    "url": "https://github.com/austinhuang0131/di-rpc/issues"
+  },
+  "license": "MIT"
+}
