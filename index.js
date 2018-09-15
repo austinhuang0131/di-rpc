@@ -2,18 +2,25 @@ const { Plugin } = require('elements'),
       drpc = require('discord-rich-presence');
 
 module.exports = class RPC extends Plugin {
-  preload () {}
+  preload () {
+    let a = this.settings,
+        client = drpc(this.settings.id);
+    delete a.id;
+    a.instance = true;
+    client.updatePresence(a);
+  }
   load () {
     this.registerSettingsTab('Rich Presence', require('./settings.jsx'))
   }
   unload () {
-    drpc(this.settings.id).updatePresence();
+    let client = drpc(this.settings.id);
+    client.updatePresence(a);
   }
   settingsChanged () {
-    console.log(this.settings);
-    let a = this.settings;
+    let a = this.settings,
+        client = drpc(this.settings.id);
     delete a.id;
     a.instance = true;
-    drpc(this.settings.id).updatePresence(a);
+    client.updatePresence(a);
   }
 }
