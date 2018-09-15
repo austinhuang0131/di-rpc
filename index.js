@@ -3,7 +3,7 @@ const { Plugin } = require('elements'),
       fs = require('fs'),
       settings = JSON.parse(fs.readFileSync("./settings.json", "utf8"));
 
-module.exports = class commands extends Plugin {
+module.exports = class RPC extends Plugin {
   preload () {}
   load () {
     this.registerSettingsTab('Rich Presence', require('./settings.jsx'))
