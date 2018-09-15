@@ -14,6 +14,6 @@ module.exports = class RPC extends Plugin {
     let a = this.settings;
     delete a.id;
     a.instance = true;
-    drpc(this.settings.id)(a);
+    drpc(this.settings.id).updatePresence(a);
   }
 }
