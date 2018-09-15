@@ -17,10 +17,10 @@ module.exports = class Settings extends React.PureComponent {
 
           <SettingsOptionButton
             text='Save Rich Presence'
-            className='DI-plugins-button-add'
+            className='DI-plugins-button'
           />
           <br />
-          <img src="https://canary.discordapp.com/assets/43bef54c8aee2bc0fd1c717d5f8ae28a.png" alt="Example!"/>
+          <img src="https://canary.discordapp.com/assets/43bef54c8aee2bc0fd1c717d5f8ae28a.png" width="300" alt="Example!"/>
         </div>
         
       </div>
