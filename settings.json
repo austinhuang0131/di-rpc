@@ -1,9 +1,12 @@
 {
-  "state": "",
-  "details": "",
-  "startTimestamp": 0,
-  "endTimestamp": 0,
-  "largeImageKey": "",
-  "smallImageKey": "",
-  "instance": true
+  "id": "",
+  "rpc": {
+    "state": "",
+    "details": "",
+    "startTimestamp": 0,
+    "endTimestamp": 0,
+    "largeImageKey": "",
+    "smallImageKey": "",
+    "instance": true
+  }
 }
