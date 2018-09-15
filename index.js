@@ -9,11 +9,10 @@ module.exports = class RPC extends Plugin {
   unload () {
     rpc(this.settings.id)();
   }
-}
-
-function setRPC() {
-  console.log("apply fired");
-  let a = this.settings;
-  delete a.id;
-  rpc(this.settings.id)(a);
+  settingsChanged () {
+    console.log("RPC changed");
+    let a = this.settings;
+    delete a.id;
+    rpc(this.settings.id)(a);
+  }
 }
