@@ -7,7 +7,7 @@ module.exports = class RPC extends Plugin {
     this.registerSettingsTab('Rich Presence', require('./settings.jsx'))
   }
   unload () {
-    drpc(this.settings.id)();
+    drpc(this.settings.id).updatePresence();
   }
   settingsChanged () {
     console.log(this.settings);
